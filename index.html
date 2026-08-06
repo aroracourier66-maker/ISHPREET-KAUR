@@ -1,427 +1,271 @@
-<!DOCTYPE html>
-<html lang="en">
+/*========================
+SECTION
+========================*/
 
-<head>
+.section{
 
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+padding:100px 8%;
+background:#faf8f5;
 
-<title>Ishpreet Kaur | Dispatch Executive</title>
+}
 
-<meta name="description" content="Professional Resume & Portfolio of Ishpreet Kaur">
+.title{
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+font-family:'Playfair Display',serif;
+font-size:46px;
+color:#1f2d22;
+margin-bottom:40px;
+position:relative;
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+}
 
-<link rel="stylesheet" href="style.css">
+.title::after{
 
-<link rel="stylesheet"
-href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+content:"";
+width:90px;
+height:4px;
+background:#b48b45;
+display:block;
+margin-top:12px;
+border-radius:20px;
 
-</head>
+}
 
-<body>
+.section p{
 
-<!--================ NAVBAR ================-->
+font-size:18px;
+line-height:1.9;
+color:#555;
 
-<header id="navbar">
+}
 
-<div class="logo">
+/*========================
+SUMMARY CARDS
+========================*/
 
-ISHPREET
+.cards{
 
-</div>
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+margin-top:40px;
 
-<nav>
+}
 
-<a href="#home">Home</a>
+.card{
 
-<a href="#about">About</a>
+background:#fff;
+padding:30px;
+border-radius:18px;
+box-shadow:0 10px 35px rgba(0,0,0,.08);
+transition:.4s;
 
-<a href="#experience">Experience</a>
+}
 
-<a href="#skills">Skills</a>
+.card:hover{
 
-<a href="#education">Education</a>
+transform:translateY(-10px);
 
-<a href="#contact">Contact</a>
+}
 
-</nav>
+.card::before{
 
-</header>
+content:"✓";
+display:inline-block;
+margin-right:10px;
+color:#b48b45;
+font-weight:bold;
 
-<!--================ HERO ================-->
+}
 
-<section id="home" class="hero">
+/*========================
+TIMELINE
+========================*/
 
-<div class="overlay"></div>
+.timeline{
 
-<div class="hero-content">
+margin-top:50px;
+position:relative;
 
-<h1>ISHPREET KAUR</h1>
+}
 
-<h2>Dispatch Executive / Dispatch Assistant</h2>
+.timeline::before{
 
-<p>
+content:"";
+position:absolute;
+left:20px;
+top:0;
+width:3px;
+height:100%;
+background:#b48b45;
 
-Dedicated professional with 3 years of Graphic Designing experience seeking a Dispatch Executive opportunity.
+}
 
-</p>
+.timeline-box{
 
-<div class="hero-buttons">
+background:white;
+padding:35px;
+margin-left:60px;
+border-radius:18px;
+box-shadow:0 12px 40px rgba(0,0,0,.08);
+position:relative;
 
-<a href="resume.pdf" class="btn" download>
+}
 
-Download Resume
+.timeline-box::before{
 
-</a>
+content:"";
+width:18px;
+height:18px;
+background:#b48b45;
+border-radius:50%;
+position:absolute;
+left:-49px;
+top:38px;
 
-<a href="#contact" class="btn outline">
+}
 
-Contact Me
+.timeline-box h3{
 
-</a>
+font-size:28px;
+color:#1f2d22;
+margin-bottom:8px;
 
-</div>
+}
 
-</div>
+.timeline-box h4{
 
-<div class="scroll">
+color:#b48b45;
+margin-bottom:8px;
 
-SCROLL
+}
 
-</div>
+.timeline-box span{
 
-</section>
+display:block;
+margin-bottom:20px;
+color:#888;
 
-<!--================ ABOUT ================-->
+}
 
-<section id="about" class="section">
+.timeline-box ul{
 
-<h2 class="title">
+padding-left:18px;
 
-Career Objective
+}
 
-</h2>
+.timeline-box li{
 
-<p>
+margin-bottom:10px;
+line-height:1.7;
 
-A dedicated, hardworking and detail-oriented professional with 3 years of experience in graphic designing and print production. Seeking a Dispatch Executive position where I can utilize my documentation, computer knowledge, inventory coordination, communication and organizational skills while contributing to company growth.
+}
 
-</p>
+/*========================
+SKILLS
+========================*/
 
-</section>
+.skill-grid{
 
-<!--================ SUMMARY ================-->
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:30px;
+margin-top:50px;
 
-<section class="section">
+}
 
-<h2 class="title">
+.skill-box{
 
-Professional Summary
+background:white;
+padding:35px;
+border-radius:20px;
+box-shadow:0 10px 35px rgba(0,0,0,.08);
+transition:.4s;
 
-</h2>
+}
 
-<div class="cards">
+.skill-box:hover{
 
-<div class="card">Dedicated and responsible professional.</div>
+transform:translateY(-8px);
 
-<div class="card">3 Years Graphic Designing Experience.</div>
+}
 
-<div class="card">Documentation & Record Management.</div>
+.skill-box h3{
 
-<div class="card">Computer Operations.</div>
+margin-bottom:20px;
+font-size:28px;
+color:#1f2d22;
 
-<div class="card">Attention to Detail.</div>
+}
 
-<div class="card">Customer Handling.</div>
+.skill-box ul{
 
-<div class="card">Quick Learner.</div>
+padding-left:20px;
 
-<div class="card">Positive Attitude.</div>
+}
 
-</div>
+.skill-box li{
 
-</section>
+margin-bottom:12px;
+color:#555;
 
-<!--================ EXPERIENCE ================-->
+}
 
-<section id="experience" class="section">
+/*========================
+EDUCATION
+========================*/
 
-<h2 class="title">
+.edu{
 
-Work Experience
+margin-top:40px;
+background:white;
+padding:45px;
+border-radius:20px;
+box-shadow:0 10px 35px rgba(0,0,0,.08);
 
-</h2>
+}
 
-<div class="timeline">
+.edu h3{
 
-<div class="timeline-box">
+font-size:28px;
+color:#1f2d22;
+margin-bottom:10px;
 
-<h3>Graphic Designer</h3>
+}
 
-<h4>Rai Arts</h4>
+.edu p{
 
-<span>Mullanpur Dakha, Ludhiana</span>
+margin-bottom:35px;
 
-<p>
+}
 
-Duration : 3 Years
+/*========================
+ANIMATION
+========================*/
 
-</p>
+.card,
+.timeline-box,
+.skill-box,
+.edu{
 
-<ul>
+animation:fadeUp 1s ease;
 
-<li>Brochure Designing</li>
+}
 
-<li>Packaging Design</li>
+@keyframes fadeUp{
 
-<li>Banner Designing</li>
+from{
 
-<li>Wedding Card Designing</li>
+opacity:0;
+transform:translateY(40px);
 
-<li>Customer Coordination</li>
+}
 
-<li>Print Ready Files</li>
+to{
 
-<li>CorelDRAW</li>
+opacity:1;
+transform:translateY(0);
 
-<li>Adobe Photoshop</li>
+}
 
-<li>Adobe Illustrator</li>
-
-<li>Order Documentation</li>
-
-<li>Delivery Coordination</li>
-
-<li>Record Management</li>
-
-</ul>
-
-</div>
-
-</div>
-
-</section>
-
-<!--================ SKILLS ================-->
-
-<section id="skills" class="section">
-
-<h2 class="title">
-
-Skills
-
-</h2>
-
-<div class="skill-grid">
-
-<div class="skill-box">
-
-<h3>Dispatch</h3>
-
-<ul>
-
-<li>Dispatch Coordination</li>
-
-<li>Shipment Documentation</li>
-
-<li>Inventory Coordination</li>
-
-<li>Order Processing</li>
-
-<li>Record Keeping</li>
-
-<li>Data Entry</li>
-
-</ul>
-
-</div>
-
-<div class="skill-box">
-
-<h3>Computer</h3>
-
-<ul>
-
-<li>MS Word</li>
-
-<li>MS Excel</li>
-
-<li>MS PowerPoint</li>
-
-<li>Microsoft Office</li>
-
-<li>Email Handling</li>
-
-<li>Internet</li>
-
-</ul>
-
-</div>
-
-<div class="skill-box">
-
-<h3>Graphic Designing</h3>
-
-<ul>
-
-<li>CorelDRAW</li>
-
-<li>Photoshop</li>
-
-<li>Illustrator</li>
-
-<li>Packaging Design</li>
-
-<li>Print Design</li>
-
-<li>Banner Design</li>
-
-</ul>
-
-</div>
-
-<div class="skill-box">
-
-<h3>Soft Skills</h3>
-
-<ul>
-
-<li>Communication</li>
-
-<li>Teamwork</li>
-
-<li>Time Management</li>
-
-<li>Positive Attitude</li>
-
-<li>Multitasking</li>
-
-<li>Problem Solving</li>
-
-</ul>
-
-</div>
-
-</div>
-
-</section>
-
-<!--================ EDUCATION ================-->
-
-<section id="education" class="section">
-
-<h2 class="title">
-
-Education
-
-</h2>
-
-<div class="edu">
-
-<h3>
-
-Bachelor of Arts (Pursuing)
-
-</h3>
-
-<p>
-
-Lovely Professional University
-
-</p>
-
-<br>
-
-<h3>
-
-Senior Secondary (10+2)
-
-</h3>
-
-<p>
-
-St. Martha Bethany Vidyalaya
-
-Rurka Kalan, Punjab
-
-</p>
-
-</div>
-
-</section>
-
-<!--================ CONTACT ================-->
-
-<section id="contact" class="section">
-
-<h2 class="title">
-
-Let's Connect
-
-</h2>
-
-<p>
-
-Available for Dispatch Executive, Logistics Coordinator, Back Office and Operations Executive opportunities.
-
-</p>
-
-<div class="contact-buttons">
-
-<a href="https://wa.me/qr/OHXQCUQNRNK3F1"
-
-target="_blank"
-
-class="contact-btn">
-
-<i class="fab fa-whatsapp"></i>
-
-WhatsApp
-
-</a>
-
-<a href="https://www.instagram.com/ishkxur01?igsh=ZHk2YXAybmN0N3Z5&utm_source=qr"
-
-target="_blank"
-
-class="contact-btn">
-
-<i class="fab fa-instagram"></i>
-
-Instagram
-
-</a>
-
-<a href="mailto:ishpreetkaur042@gmail.com"
-
-class="contact-btn">
-
-<i class="fas fa-envelope"></i>
-
-Email
-
-</a>
-
-</div>
-
-</section>
-
-<footer>
-
-<p>
-
-© 2026 Ishpreet Kaur
-
-</p>
-
-</footer>
-
-<script src="script.js"></script>
-
-</body>
-
-</html>
+}
